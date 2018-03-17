@@ -1,0 +1,135 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.empty-row {
+    height: 200px;
+}
+
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.homepage, .tops, .bottoms, .shoes, .accessories {
+    display: block;
+    position: relative;
+}
+
+.jumbotron {
+    margin-top: 60px;
+    background-image: url('Images/Background/pexels-photo-459486.jpeg');
+    background-size: cover;
+}
+
+.homepage::after {
+    content: "";
+    background-image: url('Images/Background/pexels-photo-581339.jpeg');
+    background-size: cover;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.button-row {
+    margin-top: 50px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.button-row2 {
+    margin-top: 20px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.outfit {
+    margin-left: 25px;
+    text-align: center;
+}
+
+.col-header {
+    text-align: center;
+    font-size: 58px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+}
+
+img {
+    height: 120px;
+    width: 140px;
+}
+
+.tops::after {
+    content: "";
+    background-image: url('Images/Background/pexels-photo-264726.jpeg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.thumbnail {
+    height: 280px;
+    background-image: url('Images/Background/pexels-photo-220182.jpeg');
+    background-size: cover;
+    text-align: center;
+}
+
+p a {
+    color: white;
+}
+
+.bottoms::after {
+    content: "";
+    background-image: url('Images/Background/jeans-hipster-urban-will-milne.jpg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.shoes::after {
+    content: "";
+    background-image: url('Images/Background/pexels-photo-267202.jpeg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.accessories::after {
+    content: "";
+    background-image: url('Images/Background/pexels-photo-164641.jpeg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.title {
+    font-size: 58px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.index-row {
+    margin-top: 30px;
+}
