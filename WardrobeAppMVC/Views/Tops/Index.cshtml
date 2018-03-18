@@ -6,14 +6,16 @@
     }
     <div class="tops">
         <div class="container">
-            <h2>Index</h2>
-
-            <p>
-                @Html.ActionLink("Create New", "Create")
-            </p>
-
-
             <div class="row">
+                <div class="col-sm-12">
+                    <p class="title" id="top">Tops</p>
+                    <p>
+                        @Html.ActionLink("Create New", "Create")
+                    </p>
+                </div>
+            </div>
+
+            <div class="row index-row">
                 @foreach (var item in Model)
                 {
                     <div class="col-sm-6 col-md-3 item-col">

@@ -153,6 +153,7 @@
     <Compile Include="Controllers\ColorsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OccasionsController.cs" />
+    <Compile Include="Controllers\OutfitsController.cs" />
     <Compile Include="Controllers\SeasonsController.cs" />
     <Compile Include="Controllers\ShoesController.cs" />
     <Compile Include="Controllers\ShoeTypesController.cs" />
@@ -222,6 +223,13 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\Accessories\bracelet1.jpg" />
+    <Content Include="Content\Images\Accessories\hat1.jpg" />
+    <Content Include="Content\Images\Accessories\hat2.jpg" />
+    <Content Include="Content\Images\Accessories\necklace.jpg" />
+    <Content Include="Content\Images\Accessories\skullcap.jpg" />
+    <Content Include="Content\Images\Accessories\watch2.jpg" />
+    <Content Include="Content\Images\Accessories\watch3.jpg" />
     <Content Include="Content\Images\Background\jeans-hipster-urban-will-milne.jpg" />
     <Content Include="Content\Images\Background\pexels-photo-164641.jpeg" />
     <Content Include="Content\Images\Background\pexels-photo-220182.jpeg" />
@@ -229,6 +237,32 @@
     <Content Include="Content\Images\Background\pexels-photo-267202.jpeg" />
     <Content Include="Content\Images\Background\pexels-photo-459486.jpeg" />
     <Content Include="Content\Images\Background\pexels-photo-581339.jpeg" />
+    <Content Include="Content\Images\Bottoms\ballshorts1.jpg" />
+    <Content Include="Content\Images\Bottoms\ballshorts2.jpg" />
+    <Content Include="Content\Images\Bottoms\jeans2.jpg" />
+    <Content Include="Content\Images\Bottoms\jeans3.jpg" />
+    <Content Include="Content\Images\Bottoms\jeanshorts.jpg" />
+    <Content Include="Content\Images\Bottoms\khakis1.jpg" />
+    <Content Include="Content\Images\Bottoms\khakishorts.jpg" />
+    <Content Include="Content\Images\Bottoms\sweatpant1.jpg" />
+    <Content Include="Content\Images\Bottoms\sweatpant2.jpg" />
+    <Content Include="Content\Images\Shoes\shoe1.jpg" />
+    <Content Include="Content\Images\Shoes\shoe2.jpg" />
+    <Content Include="Content\Images\Shoes\shoe3.jpg" />
+    <Content Include="Content\Images\Shoes\shoe4.jpg" />
+    <Content Include="Content\Images\Shoes\shoe5.jpeg" />
+    <Content Include="Content\Images\Shoes\shoe6.jpg" />
+    <Content Include="Content\Images\Shoes\shoe7.jpg" />
+    <Content Include="Content\Images\Shoes\shoe8.jpg" />
+    <Content Include="Content\Images\Tops\buttonshirt1.jpg" />
+    <Content Include="Content\Images\Tops\buttonshirt2.jpg" />
+    <Content Include="Content\Images\Tops\polo1.jpg" />
+    <Content Include="Content\Images\Tops\polo2.jpg" />
+    <Content Include="Content\Images\Tops\sweater1.jpg" />
+    <Content Include="Content\Images\Tops\sweater2.jpg" />
+    <Content Include="Content\Images\Tops\tshirt1.jpg" />
+    <Content Include="Content\Images\Tops\tshirt2.jpg" />
+    <Content Include="Content\Images\Tops\turtleneck.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -347,13 +381,14 @@
     <Content Include="Views\TopTypes\Details.cshtml" />
     <Content Include="Views\TopTypes\Edit.cshtml" />
     <Content Include="Views\TopTypes\Index.cshtml" />
+    <Content Include="Views\Outfits\Create.cshtml" />
+    <Content Include="Views\Outfits\Delete.cshtml" />
+    <Content Include="Views\Outfits\Details.cshtml" />
+    <Content Include="Views\Outfits\Edit.cshtml" />
+    <Content Include="Views\Outfits\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\Images\Accessories\" />
-    <Folder Include="Content\Images\Bottoms\" />
-    <Folder Include="Content\Images\Shoes\" />
-    <Folder Include="Content\Images\Tops\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
