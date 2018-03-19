@@ -12,7 +12,7 @@
     padding-right: 15px;
 }
 
-.homepage, .tops, .bottoms, .shoes, .accessories {
+.homepage, .tops, .bottoms, .shoes, .accessories, .outfits, .details {
     display: block;
     position: relative;
 }
@@ -125,6 +125,18 @@ p a {
     z-index: -1;
 }
 
+.outfits::after {
+    content: "";
+    background-image: url('Images/Background/pexels-photo-264554.jpeg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
 .title {
     font-size: 58px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -136,4 +148,34 @@ p a {
 
 .index-row {
     margin-top: 30px;
+}
+
+.outfit-thumbnail {
+    height: 500px;
+    background-image: url('Images/Background/pexels-photo-220182.jpeg');
+    background-size: cover;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.details::after {
+    content: "";
+    background-image: url('Images/Background/pexels-photo-52062.jpeg');
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.details-container {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.index {
+    background-color: darkgray;
+    background-size: cover;
 }

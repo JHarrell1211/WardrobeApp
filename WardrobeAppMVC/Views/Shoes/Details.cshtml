@@ -4,63 +4,70 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<div class="details">
+    <div class="container details-container">
+        <div class="jumbotron">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Details</h2>
+                    
+                    <h4>
+                        @Html.DisplayFor(model => model.ShoeName) <br />
+                        <img src=" @Html.DisplayFor(model => model.ShoeImage)" />
+                    </h4>
+                    <hr />
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <h3>Shoe Type</h3>
+                    <p>
+                        @Html.DisplayFor(model => model.ShoeType.ShoeType1)
+                    </p>
+                        
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h3>
+                        Color
+                    </h3>
 
-<div>
-    <h4>Sho</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.ShoeName)
-        </dt>
+                    <p>
+                        @Html.DisplayFor(model => model.Color.ColorName)
 
-        <dd>
-            @Html.DisplayFor(model => model.ShoeName)
-        </dd>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <h3>
+                        Season
+                    </h3>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ShoeImage)
-        </dt>
+                    <p>
+                        @Html.DisplayFor(model => model.Season.SeasonName)
 
-        <dd>
-            @Html.DisplayFor(model => model.ShoeImage)
-        </dd>
+                    </p>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <h3>
+                        Occasion
+                    </h3>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Color.ColorName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Color.ColorName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Occasion.OccasionName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Occasion.OccasionName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Season.SeasonName)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Season.SeasonName)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.ShoeType.ShoeType1)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.ShoeType.ShoeType1)
-        </dd>
-
-    </dl>
+                    <p>
+                        @Html.DisplayFor(model => model.Occasion.OccasionName)
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <p>
+                        <button type="button" class="btn btn-danger"> @Html.ActionLink("Edit", "Edit", new { id = Model.ShoeID })</button>
+                        <button type="button" class="btn btn-warning">@Html.ActionLink("Back to List", "Index")</button>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row empty-row"></div>
+    </div>
 </div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ShoeID }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+
