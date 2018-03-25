@@ -7,6 +7,12 @@
     height: 200px;
 }
 
+#resize {
+    text-align: center;
+    font-size: 72px;
+    font-family: Impact;
+}
+
 .body-content {
     padding-left: 15px;
     padding-right: 15px;
@@ -41,6 +47,10 @@
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
 }
+#copy {
+    text-align: center;
+    font-size: 30px;
+}
 
 .button-row2 {
     margin-top: 20px;
@@ -54,7 +64,7 @@
     text-align: center;
 }
 
-.col-header {
+/*.col-header*/  #welcome {
     text-align: center;
     font-size: 58px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;

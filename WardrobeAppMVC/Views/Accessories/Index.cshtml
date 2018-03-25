@@ -12,14 +12,15 @@
                     <p>@Html.ActionLink("Create New", "Create")</p>
                 </div>
             </div>
-            <div class="row index-row">
+           
+            <div class="row index-row" id="one">
                 @foreach (var item in Model)
                 {
-                    <div class="col-sm-6 col-md-3 item-col">
-                        <div class="thumbnail">
+                    <div class="col-sm-6 col-md-3 item-col" >
+                        <div class="thumbnail" >
                             <div class="caption">
-                                <h3>@Html.DisplayFor(modelItem => item.AccessoryName)</h3>
-                                <p>
+                                <h3 id="acName">@Html.DisplayFor(modelItem => item.AccessoryName)</h3>
+                                <p id="acImage">
                                     <img src="@Html.DisplayFor(modelItem => item.AccessoryImage)" />
                                 </p>
                                 <p>
@@ -35,4 +36,5 @@
             <div class="empty-row"></div>
         </div>
     </div>
+
 </body>

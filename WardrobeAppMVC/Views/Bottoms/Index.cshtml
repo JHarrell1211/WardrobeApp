@@ -5,7 +5,7 @@
         ViewBag.Title = "Index";
     }
 
-    <div class="bottoms">
+    <div class="bottoms" >
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -16,25 +16,36 @@
                 </div>
             </div>
 
-            <div class="row index-row">
-                @foreach (var item in Model)
-        {
-            <div class="col-sm-6 col-md-3 item-col">
-                <div class="thumbnail">
-                    <div class="caption">
-                        <h3>@Html.DisplayFor(modelItem => item.BottomName)</h3>
-                        <p>
-                            <img src="@Html.DisplayFor(modelItem => item.BottomImage)" />
-                        </p>
-                        <p>
-                            <button type="button" class="btn btn-primary">@Html.ActionLink("Edit", "Edit", new { id = item.BottomID })</button>
-                            <button type="button" class="btn btn-success">@Html.ActionLink("Details", "Details", new { id = item.BottomID })</button>
-                            <button type="button" class="btn btn-warning">@Html.ActionLink("Delete", "Delete", new { id = item.BottomID })</button>
-                        </p>>
-                    </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <button type="button" class="btn btn-primary" id="btn" onclick="Display('ind-row', 'btn')">Display All Bottoms</button>
+                    <button type="button" class="btn btn-danger" id="btn2" onclick="typearray()">Display Jeans</button>
                 </div>
             </div>
-}
+
+
+            <div class="row index-row" id="ind-row" style="display:none">
+                @foreach (var item in Model)
+                {
+                    <div class="col-sm-6 col-md-3 item-col" id="thumb" style="display:block">
+                        <div class="thumbnail">
+                            <div class="caption">
+                                <h3 class="jeans">@Html.DisplayFor(modelItem => item.BottomName)</h3>
+                                <p>
+                                    <img src="@Html.DisplayFor(modelItem => item.BottomImage)" />
+                                </p>
+
+                                <p class="bot" id="bot"> @Html.DisplayFor(modelItem => item.BottomType.BottomType1)</p>
+
+                                       <p>
+                                        <button type="button" class="btn btn-primary">@Html.ActionLink("Edit", "Edit", new { id = item.BottomID })</button>
+                                        <button type="button" class="btn btn-success">@Html.ActionLink("Details", "Details", new { id = item.BottomID })</button>
+                                        <button type="button" class="btn btn-warning">@Html.ActionLink("Delete", "Delete", new { id = item.BottomID })</button>
+                                    </p>>
+                                </div>
+                        </div>
+                    </div>
+                }
             </div>
             <div class="empty-row"></div>
         </div>

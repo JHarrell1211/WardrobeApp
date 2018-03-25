@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <!--
+            The website MUST allow the user to dynamically add content in your web application utilizing a JavaScript method, buttons and text fields
+    ----- On the homepage, a prompt asks for your name and the message "Welcome + Your Name" is displayed.
+    function Greeting() {
+        var x = document.getElementById("welcome");
+        var userResponse = prompt('What is your name?');
+        x.getElementsByTagName('p')[0].innerText = 'Welcome ' + userResponse + ',';
+    }
+    The website MUST allow the user to dynamically remove content from your web application utilizing a JavaScript method, buttons and text fields
+    ------ On the bottoms page, there is a button to display or hide all items.
+    function Display(x,y) {
+        xp = document.getElementById(x);
+        yp = document.getElementById(y);
+        if (xp.style.display == "none") {
+            xp.style.display = "block";
+            yp.innerText = "Hide Bottoms";
+        }
+        else
+        {
+            xp.style.display = "none";
+            yp.innerText = "Display All Bottoms";
+        }
+    }
+    The website MUST allow the user to dynamically show all clothing items that meet certain criteria (for example, are of a certain color or are a certain type, like jeans or tshirts) utilizing a JavaScript method, buttons and text fields.
+    ------ On the bottoms page, there is a button to display all of the Jeans
+    function typearray() {
+        var typeArray = new Array();
+        x = document.getElementsByClassName('bot');
+        y = document.getElementsByClassName('jeans');
+        z = document.getElementsByClassName('item-col');
+        for (var i = 0; i < x.length; i++)
+        {
+            if (x[i].innerText === "Jeans") {
+                typeArray.push(y[i].innerText);
+                z[i].style.display = "block";
+            }
+            else {
+                z[i].style.display = "none";
+            }
+        }
+        console.log(typeArray);
+    }
+
+    The website MUST allow the user to dynamically enhance size and color of text on mouseover utilizing a JavaScript method, buttons and text fields
+    The text MUST return to its default size and color when a mouseover is not being performed
+    -------- On the home page there are buttons inside of a jumbotron.  Each button has a header, such as Tops, Bottoms etc...  Place your mouse over the header, the size and color changes. Move the mouse and it returns to normal.
+    function mouseOver(x) {
+        document.getElementById(x).style.color = "red";
+        document.getElementById(x).style.fontSize = "30px";
+    }
+    function mouseOut(x) {
+        document.getElementById(x).style.color = "white";
+        document.getElementById(x).style.fontSize = "20px";
+    }
+    The website MUST allow the user to navigate to another site utilizing a JavaScript method, buttons and text fields.
+    The website MUST inform the user they are being directed to another site.
+    The website MUST allow the user to cancel the action before it is perfomed.
+    If the user affirms the action, the website must open in another browser tab.
+    ------- On the home page there is a Redirect Button at the top of the page. Click it to go to Google.
+    function Redirect(x) {
+        var confirmButton = document.getElementById(x);
+        var userResponse = confirm('You are about to leave this site. If you want to stay, please select cancel.');
+        var displayContainer = document.getElementById('confirmResponse');
+        var displayMessage = '';
+
+        if (userResponse) {
+            var win = window.open("https://www.google.com", '_blank');
+            win.focus();
+        }
+    }
+    Add a copyright with date in the footer of your website.
+    The website MUST dynamically replace the copyright and date text to "created by "Insert Your Name".
+    You can choose to perform this action onhover or onclick.
+    -------- At the bottom of the home page is the copyright. Click it to see the changes.
+    function Click(x) {
+        document.getElementById(x);
+        x.innerText = "Created By Julian Harrell";
+    }
+    The website MUST implement an array utilizing JavaScript.
+    The website MUST provide feedback to the user based on the contents of the array.
+    -------- There is a button at the bottom of the homepage called Lucky Numbers.  It will give you an array of random numbers when clicked.
+    function luckyNumbers() {
+        var randNum = new Array();
+        for (i = 0; i < 6; i++) {
+            var num = Math.floor(Math.random() * 85) + 1;
+            randNum.push(num);
+        }
+        alert("Your Lucky Numbers are " + randNum);
+    }
+    The website must include your homework example JavaScript.
+    ------ On the homepage, resize it and a message pops up in the jumbotron, scroll and the message goes away.
+    function Resize() {
+        document.getElementById("resize").innerHTML = "Whoa Nelly!!";
+    }
+    function scroll() {
+        document.getElementById("resize").innerHTML = " ";
+    }
+
+
+            -->
+</body>
+</html>
