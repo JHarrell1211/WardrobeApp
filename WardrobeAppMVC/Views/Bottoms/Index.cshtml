@@ -18,13 +18,13 @@
 
             <div class="row">
                 <div class="col-sm-12">
-                    <button type="button" class="btn btn-primary" id="btn" onclick="Display('ind-row', 'btn')">Display All Bottoms</button>
-                    <button type="button" class="btn btn-danger" id="btn2" onclick="typearray()">Display Jeans</button>
+                    <button type="button" class="btn btn-primary" id="btn" onclick="Display('ind-row', 'btn')">Hide Bottoms</button>
+                    <button type="button" class="btn btn-danger" id="btn2" onclick="typearray()">Jeans</button>
                 </div>
             </div>
 
 
-            <div class="row index-row" id="ind-row" style="display:none">
+            <div class="row index-row" id="ind-row" style="display:block">
                 @foreach (var item in Model)
                 {
                     <div class="col-sm-6 col-md-3 item-col" id="thumb" style="display:block">
