@@ -1,4 +1,20 @@
-﻿function Greeting() {
+﻿function ShowImagePreview(imageUploader, previewImage) {
+    if (imageUploader.files && imageUploader.files[0]) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            $(previewImage).attr('src', e.target.result);
+        }
+        reader.readAsDataURL(imageUploader.files[0]);
+    }
+}
+
+
+
+
+
+
+
+function Greeting() {
     var x = document.getElementById("welcome");
     var userResponse = prompt('What is your name?');
     x.getElementsByTagName('p')[0].innerText = 'Welcome ' + userResponse + ',';

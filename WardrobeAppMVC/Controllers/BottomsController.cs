@@ -139,7 +139,14 @@ namespace WardrobeAppMVC.Controllers
                 db.Dispose();
             }
             base.Dispose(disposing);
+       
         }
+
+        //public ActionResult Create(int id = 0)
+        //{
+        //    Bottom bttm = new Bottom();
+        //    return View(bttm);
+        //}
 
     }
 }
